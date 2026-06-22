@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Library Teddy Bear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#FFF8F0] text-[#5C4033]">
+
+<div class="flex min-h-screen">
+
+    <!-- SIDEBAR -->
+    <aside class="w-64 bg-[#6F4E37] text-[#FFF8F0] p-5 shadow-xl">
+
+        <h1 class="text-2xl font-bold mb-6 text-center">
+            🧸 E-Library
+        </h1>
+
+        <button id="menu-dashboard" onclick="setActiveMenu('menu-dashboard'); showPage('dashboard')" 
+            class="menu-btn w-full p-3 rounded-xl bg-[#8B6B4A] mb-2">
+            Dashboard
+        </button>
+        
+        <button id="menu-buku" onclick="setActiveMenu('menu-buku'); showPage('buku')" 
+            class="menu-btn w-full p-3 rounded-xl bg-[#8B6B4A] mb-2">
+            Buku
+        </button>
+        
+        <button id="menu-anggota" onclick="setActiveMenu('menu-anggota'); showPage('anggota')" 
+            class="menu-btn w-full p-3 rounded-xl bg-[#8B6B4A] mb-2">
+            Anggota
+        </button>
+        
+        <button id="menu-penulis" onclick="setActiveMenu('menu-penulis'); showPage('penulis')" 
+            class="menu-btn w-full p-3 rounded-xl bg-[#8B6B4A] mb-2">
+            Penulis
+        </button>
+        
+        <button id="menu-genre" onclick="setActiveMenu('menu-genre'); showPage('genre')" 
+            class="menu-btn w-full p-3 rounded-xl bg-[#8B6B4A] mb-2">
+            Genre
+        </button>
+        
+        <button id="menu-peminjaman" onclick="setActiveMenu('menu-peminjaman'); showPage('peminjaman')" 
+            class="menu-btn w-full p-3 rounded-xl bg-[#8B6B4A] mb-2">
+            Peminjaman
+        </button>
+
+        <button onclick="logout()" class="w-full mt-5 bg-red-400 p-2 rounded-xl">
+            Logout
+        </button>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <main id="content" class="flex-1 p-8"></main>
+
+</div>
+
+<script src="components/genre.js"></script>
+<script src="components/login.js"></script>
+<script src="components/dashboard.js"></script>
+<script src="components/buku.js"></script>
+<script src="components/anggota.js"></script>
+<script src="components/penulis.js"></script>
+<script src="components/peminjaman.js"></script>
+
+<script src="index.js"></script>
+
+</body>
+</html>
